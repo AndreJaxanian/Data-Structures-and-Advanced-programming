@@ -1,0 +1,62 @@
+.spot_chess {
+    /*The GridPane height and width is 480 --> each spot is ( 480 / 8 )*/
+    -fx-min-height:  60px;
+    -fx-min-width:   60px;
+    -fx-pref-height: 60px;
+    -fx-pref-width:  60px;
+    -fx-max-height:  60px;
+    -fx-max-width:   60px;
+}
+
+.light_spot {
+    -fx-background-color: #f4fff3;
+}
+
+.dark_spot {
+    -fx-background-color: #0089b9;
+}
+
+.active_spot {
+    -fx-background-color: #a5c8ed;
+}
+.available_spot{
+    -fx-background-color: #b9313a;
+}
+
+
+.chat-box {
+    -fx-padding: 10px;
+    -fx-pref-width: 200px;
+    -fx-max-width: 300px;
+}
+
+.info-box {
+    -fx-padding: 10px;
+    -fx-pref-width: 200px;
+    -fx-max-width: 300px;
+}
+
+.chat-area {
+    -fx-pref-height: 150px;
+}
+.info-area {
+    -fx-pref-height: 200px;
+}
+.user_name{
+    -webkit-fx-skin: 12px;
+    -moz-fx-skin: 12px;
+    -ms-fx-skin: 12px;
+    -o-fx-skin: 12px;
+    -khtml-fx-skin: 12px;
+    fx-skin: 12px;
+
+    -fx-background-color: #003232;
+    -fx-background-radius:  20;
+    -fx-animated: 12;
+    -fx-font-scale: 12;
+}
+
+
+.chat-field {
+
+}
