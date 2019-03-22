@@ -1,0 +1,13 @@
+#mainContainer , .progress-bar > .track {
+ -fx-background-color: rgba(0,0,0,0.76) ;
+}
+#StartButton{
+ -fx-background-color: rgba(0,0,0,0.36);
+ -fx-cursor: hand;
+}
+#StartButton:hover {
+ -fx-background-color: rgba(0, 0, 0, 0.86);
+}
+.progress-bar > .bar {
+ -fx-background-color: white;
+}

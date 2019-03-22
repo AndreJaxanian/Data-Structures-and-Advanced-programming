@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="mainContainer" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddContactController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="337.1999816894531" minHeight="10.0" prefHeight="109.59999084472656" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="744.1999969482422" minHeight="10.0" prefHeight="191.39999389648438" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="744.1999969482422" minHeight="10.0" prefHeight="38.600006103515625" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="744.1999969482422" minHeight="10.0" prefHeight="103.60000610351562" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="650.8000183105469" minHeight="10.0" prefHeight="523.3999938964844" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="302.5999755859375" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" prefWidth="297.4000244140625" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#Back" prefHeight="58.0" prefWidth="8.0E8" text="Back" textFill="WHITE" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="saveButton" alignment="CENTER" mnemonicParsing="false" onAction="#Save" prefHeight="58.0" prefWidth="8.0E7" text="Save" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+      <ImageView fx:id="ProfilePic" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#setImage" pickOnBounds="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <ScrollPane fx:id="ScrollPane" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+         <content>
+            <VBox fx:id="ViewVBox" prefHeight="650.0" prefWidth="569.0" spacing="10.0">
+               <children>
+                  <HBox prefHeight="22.0" prefWidth="578.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="numberTextfield" promptText="Number" />
+                        <TextField fx:id="tagTextfield" promptText="Tag" />
+                        <Button fx:id="AddButton" mnemonicParsing="false" onAction="#AddNewField" prefHeight="25.0" prefWidth="25.0" />
+                     </children>
+                  </HBox>
+               </children></VBox>
+         </content>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </ScrollPane>
+      <TextField fx:id="nameTextField" onKeyReleased="#setError" promptText="Name" GridPane.rowIndex="3">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin></TextField>
+      <Label fx:id="Error" alignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+</GridPane>

@@ -1,0 +1,49 @@
+#mainContainer{
+ -fx-background-color: rgba(0,0,0,0.76) ;
+}
+.scroll-bar , .scroll-pane > .corner{
+    -fx-background-color:rgba(0,0,0,0.86) ;
+}
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 5em;
+}
+.scroll-pane > .viewport {
+    -fx-background-color:rgba(0,0,0,0);
+}
+.scroll-pane{
+    -fx-background-color: transparent;
+}
+.text-field{
+    -fx-text-fill: white;
+    -fx-background-color: black;
+    -fx-font-style: italic
+}
+#AddButton{
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-size: stretch;
+    -fx-background-image: url(/Files/add.png);
+    -fx-cursor: hand;
+}
+#saveButton,#backButton{
+    -fx-background-radius: 0;
+    -fx-background-image:inherit;
+    -fx-background-color: rgba(0,0,0,0.86);
+}
+#saveButton:hover , #backButton:hover{
+    -fx-opacity: 0.7;
+}
+.button {
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-size: stretch;
+    -fx-background-image: url(/Files/minus.png);
+    -fx-cursor: hand;
+}
+.button:hover{
+    -fx-opacity: 0.8;
+}
+#ProfilePic:hover{
+    -fx-opacity: 0.8;
+}
